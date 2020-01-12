@@ -8,4 +8,4 @@
 
   tasks:
 
-  - uri: url="https://api.telegram.org/{{ tokenBot }}/sendmessage?chat_id={{ chatID }}&parse_mode=HTML&text=<b>You%20have%20new%20pending%20approvals.</b><p>Check%20<a%20href=http://52.206.209.197>Ansible%20Tower</a>"
+  - uri: url="https://api.telegram.org/{{ tokenBot }}/sendmessage?chat_id={{ chatID }}&parse_mode=HTML&text=<b>You%20have%20new%20pending%20approvals.</b>Check%20<a%20href=http://52.206.209.197>Ansible%20Tower</a>"
