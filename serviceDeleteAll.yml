@@ -9,6 +9,11 @@
   - "{{ service_main_config_file }}"
 
   tasks:
-  - name: Installing software for the service ** {{ service_name }} **
+  - name: Deleting HTTP software service
     yum: name={{ item }} state=absent
     with_items: "{{ service_pkgs }}"
+
+  - name: Deleting NGINX repo
+    yum_repository:
+       name: "{{ service_software_repo_name }}" 
+       state: absent

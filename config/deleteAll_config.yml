@@ -1,4 +1,7 @@
 ---
 # Software to remove all the services
 service_pkgs: ['httpd', 'apr', 'apr-util', 'httpd-tools', 'mailcap', 'nginx']
+
+# NGINX repo
+service_software_repo_name: nginx
 ...
