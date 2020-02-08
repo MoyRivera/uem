@@ -4,4 +4,7 @@ service_pkgs: ['httpd', 'apr', 'apr-util', 'httpd-tools', 'mailcap', 'nginx']
 
 # NGINX repo
 service_software_repo_name: nginx
+
+# Document root
+service_config_var_document_root: ['/usr/share/nginx/html', '/var/www/html' ]
 ...

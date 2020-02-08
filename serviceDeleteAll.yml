@@ -9,6 +9,11 @@
   - "{{ service_main_config_file }}"
 
   tasks:
+  - name: Deleting document roots
+    command: rm -rf "{{ item }}" 
+    with_items: "{{ service_config_var_document_root }}"
+    ignore_errors: yes
+
   - name: Deleting HTTP software service
     yum: name={{ item }} state=absent
     with_items: "{{ service_pkgs }}"
