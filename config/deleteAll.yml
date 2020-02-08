@@ -1,0 +1,4 @@
+---
+# Software to remove all the services
+service_pkgs: ['httpd', 'apr', 'apr-util', 'httpd-tools', 'mailcap', 'nginx']
+...
